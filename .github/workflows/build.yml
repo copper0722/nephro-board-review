@@ -18,6 +18,9 @@ jobs:
       - name: Install Marp CLI
         run: npm install -g @marp-team/marp-cli
 
+      - name: Install pandoc
+        run: sudo apt-get install -y pandoc
+
       - name: Build slides (Marp)
         run: |
           mkdir -p dist/slides
