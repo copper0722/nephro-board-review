@@ -5,8 +5,6 @@ marp: false
 # 腎臟專科考試複習 — Teaching Slides
 ## Nephrology Board Review
 
-> 寧缺勿濫：僅發布 v2.6 格式的完整章節。舊格式 legacy notes (Ch00-05, 07-10, 12-15, 17, 18, 29, 30, 32, 34) 已封存，等待 PDF 重新生成。
-
 ### Daugirdas 6e
 
 | Ch | Title | Slides |
