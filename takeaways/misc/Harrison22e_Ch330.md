@@ -1,6 +1,6 @@
 ---
 _synced_from: ref/internal_medicine/nephrology/stones/Harrison22e_Ch330.md
-_synced_at: '2026-04-20T14:01:25'
+_synced_at: '2026-04-20T14:16:00'
 title: 腎結石｜Nephrolithiasis
 book: misc
 chapter: Harrison22e_Ch330

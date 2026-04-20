@@ -1,6 +1,6 @@
 ---
 _synced_from: ref/internal_medicine/nephrology/CKD/Harrison22e_Ch322.md
-_synced_at: '2026-04-20T14:01:25'
+_synced_at: '2026-04-20T14:16:00'
 title: 慢性腎臟病｜Chronic Kidney Disease
 book: misc
 chapter: Harrison22e_Ch322

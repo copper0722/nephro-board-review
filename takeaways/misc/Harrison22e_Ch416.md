@@ -1,6 +1,6 @@
 ---
 _synced_from: ref/internal_medicine/endocrinology/diabetes/Harrison22e_Ch416.md
-_synced_at: '2026-04-20T14:01:25'
+_synced_at: '2026-04-20T14:16:00'
 title: '糖尿病：管理與治療｜Diabetes Mellitus: Management and Therapies'
 book: misc
 chapter: Harrison22e_Ch416
