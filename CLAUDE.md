@@ -41,7 +41,7 @@ Vault textbook chapter note (ref/books/{edition}/{chXX}/*.md)
 ## Cross-link
 
 - Nephrology textbook slides + CME: [`copper0722/nephro-cme`](https://github.com/copper0722/nephro-cme)
-- Vault canonical notes: vault-only `ref/books/{edition}/`
+- Vault canonical notes: vault-only `raw/books/{edition}/`
 
 ## Content Policy
 
