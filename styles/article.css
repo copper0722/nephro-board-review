@@ -1,0 +1,148 @@
+/* Article-style page CSS for takeaways/* (and any chapter-content HTML).
+   Distinct from styles/index.css which is index.md-specific (e.g. centers <em>).
+   For prose with inline markdown italics, em MUST stay inline italic. */
+
+:root {
+  --primary: #1a5276;
+  --secondary: #2c3e50;
+  --text: #222;
+  --muted: #666;
+  --border: #e1e5e9;
+  --bg-alt: #f6f8fa;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC",
+               "Heiti TC", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+  line-height: 1.75;
+  color: var(--text);
+  background: #fff;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+h1 {
+  color: var(--primary);
+  font-size: 1.7rem;
+  line-height: 1.35;
+  margin: 0 0 1rem;
+}
+h1.title { display: none; }   /* hide pandoc-injected duplicate title */
+
+h2 {
+  color: var(--secondary);
+  font-size: 1.25rem;
+  margin: 1.8rem 0 0.7rem;
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 0.3rem;
+}
+
+h3 {
+  color: var(--primary);
+  font-size: 1.05rem;
+  margin: 1.4rem 0 0.5rem;
+}
+
+p { margin: 0.7rem 0; }
+
+ul, ol {
+  padding-left: 1.5rem;
+  margin: 0.7rem 0;
+}
+
+li {
+  margin: 0.55rem 0;
+  line-height: 1.75;
+}
+
+li > ul, li > ol {
+  margin: 0.3rem 0 0.4rem;
+}
+
+/* Inline markdown italic (model organism names, book titles, quotes) — KEEP INLINE */
+em {
+  font-style: italic;
+  color: inherit;
+}
+
+strong {
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+code {
+  background: var(--bg-alt);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-family: "SF Mono", "Menlo", monospace;
+}
+
+pre {
+  background: var(--bg-alt);
+  padding: 0.9rem 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+pre code { background: none; padding: 0; }
+
+blockquote {
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  border-left: 3px solid var(--primary);
+  color: var(--muted);
+  background: var(--bg-alt);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+a:hover { border-bottom-color: var(--primary); }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.8rem 0 1.4rem;
+  font-size: 0.95rem;
+}
+
+th, td {
+  padding: 0.55rem 0.7rem;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: var(--bg-alt);
+  font-weight: 600;
+  color: var(--secondary);
+}
+
+tr:hover td { background: #fafbfc; }
+
+hr {
+  margin: 2rem 0 1rem;
+  border: 0;
+  border-top: 1px solid var(--border);
+}
+
+/* MathJax / KaTeX inline display fallback */
+.math.display { display: block; text-align: center; margin: 0.5rem auto; }
+
+@media (max-width: 640px) {
+  body { padding: 1.25rem 0.9rem 2.5rem; line-height: 1.7; }
+  h1 { font-size: 1.4rem; }
+  h2 { font-size: 1.05rem; }
+  table { font-size: 0.88rem; }
+}
